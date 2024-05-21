@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vraj Patel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="top-container">
+        <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
+        <div class="container">
+          <h1><span class="text first-text">I'm Vraj</span></h1>
+          <h2><span class="text sec-text">a Developer</span></h2>
+      </div>
+      <script>
+        const text = document.querySelector(".sec-text");
+
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "a Developer";
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "a web-designer";
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "a YouTuber";
+            }, 8000); //1s = 1000 milliseconds
+        }
+
+        textLoad();
+        setInterval(textLoad, 12000);
+    </script>    
+        <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
+        <img src="images/mountain.png" alt="mountain-img">
+    </div>
+    <div class="middle-container">
+        <div class="profile">
+          <img src="images/Vraj.png" alt="Vraj-profilepic">
+          <h2>Hello.</h2>
+          <p class="intro"> As a frontend web developer with strong editing skills, I have a unique combination of technical and creative abilities. I am specialize in designing and developing the user-facing components of websites, using HTML, CSS, and JavaScript to create visually appealing and intuitive interfaces. Additionally,my editing skills allow me to craft compelling and engaging content that resonates with my audience. I understand the importance of user experience and use my skills to create websites that are not only visually stunning but also functional and easy to use. My proficiency in frontend development and editing make me a valuable asset to any team looking to create high-quality websites and content.</p>
+        </div>
+        <hr>
+        <div class="skills">
+          <h2>My Skills.</h2>
+          <div class="skill-row">
+            <img class="html" src="images/html-file.png" alt="html">
+            <h3>HTML</h3>
+            <p>Hypertext Markup Language is a markup language used to create and structure content for the World Wide Web, consisting of a set of tags and attributes that define how a web page is displayed in a web browser.</p>
+          </div>
+          <div class="skill-row">
+            <img class="css" src="images/css-file-format.png" alt="css">
+            <h3>CSS</h3>
+            <p>Cascading Style Sheets is a styling language used to describe the visual appearance and layout of HTML documents, including elements such as fonts, colors, spacing, and positioning. It allows web developers to separate the presentation of content from its structure, making it easier to manage and update the appearance of a website.</p>
+          </div>
+          <div class="skill-row">
+            <img class="JavaScript" src="images/js.png" alt="css">
+            <h3>JavaScript</h3>
+            <p>JavaScript is a high-level, dynamic programming language used to create interactive and dynamic effects on web pages, as well as for server-side programming and development of desktop and mobile applications. It allows web developers to add functionality such as form validation, dynamic content updates, and animations to websites, as well as create complex web applications that can interact with web servers and databases.</p>
+          </div>
+          <div class="skill-row">
+            <img class="mdb" src="images/mdb.png" alt="css">
+            <h3>MongoDB</h3>
+            <p>MongoDB is a source-available, cross-platform, document-oriented database program. Classified as a NoSQL database product, MongoDB utilizes JSON-like documents with optional schemas. MongoDB is developed by MongoDB Inc. and current versions are licensed under the Server Side Public License (SSPL). MongoDB is a member of the MACH Alliance.</p>
+          </div>
+          <div class="skill-row">
+            <img class="react" src="images/React.png" alt="css">
+            <h3>React</h3>
+            <p>React is a framework that employs Webpack to automatically compile React, JSX, and ES6 code while handling CSS file prefixes. React is a JavaScript-based UI development library. Although React is a library rather than a language, it is widely used in web development. The library first appeared in May 2013 and is now one of the most commonly used frontend libraries for web development.</p>
+          </div>
+        </div>
+        <hr>
+        <div class="Projects">
+          <h2>Projects</h2>
+          <div class="grid">
+              <div class="image">
+                  <img class="image__img" src="images/joke.jpg" alt="jokes">
+                  <div class="image__overlay image__overlay--primary">
+                      <div class="image__title">Jokes Generator</div>
+                      <p class="image__description">
+                          HTML, CSS and JavaScript
+                      <br>(This is the website name Random Jokes Generator which will generate you random jokes.)
+                      </p>
+                  </div>
+              </div>
+              <div class="image">
+                  <img class="image__img" src="images/Gamezy.jpg" alt="jokes">
+                  <div class="image__overlay image__overlay--primary">
+                      <div class="image__title">Gamezy</div>
+                      <p class="image__description">
+                          HTML, CSS and JavaScript
+                      <br>("Gamezy" is a dynamic gaming website featuring five mini-games built using HTML, CSS, and JavaScript.)
+                      </p>
+                  </div>
+              </div>
+              <div class="image">
+                  <img class="image__img" src="images/sambhu.jpg" alt="jokes">
+                  <div class="image__overlay image__overlay--primary">
+                      <div class="image__title">Sambhu</div>
+                      <p class="image__description">
+                          HTML, CSS, JavaScript and Bootstrap
+                      <br>(Shambhu e-Solutions is a sophisticated e-solution website for Shambhu e-Solutions pvt. Ltd.)
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+        <hr>
+        <div class="contact-me">
+          <h2>Get In Touch</h2>
+          <h3>"Any fool can write code that a computer can understand. Good programmers write code that humans can understand." - Martin Fowler</h3>
+          <p class="contact-msg">22, Gandhi Park Society College Road,<br> vaniywad, Nadiad.</p>
+          <a class="btn" href="mailto:vrajp9013@gmail.com">CONTACT ME</a>
+          <a  href="images/Vraj Resume.pdf" download="Vraj_Resume.pdf"class="btn">DOWNLOAD CV </a>
+        </div>
+      </div>
+      
+      
+      <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/in/vraj-patel-6a3213265">LinkedIn</a>
+        <a class="footer-link" href="https://github.com/Itsvrajpatel">GitHub</a>
+        <p class="copyright">© 2023 Vraj Patel.</p>
+      </div>
+      
+</body>
+</html>

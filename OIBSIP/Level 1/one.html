@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Link File CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="fclogo.svg" class="logo" alt="">
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Features</a>
+                <a href="#">Variations</a>
+                <a href="#">Specials</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="hero">
+
+        <div class="text">
+            <h4>Driving into the future</h4>
+            <h1>is literally a smooth <br> <span>Drive</span></h1>
+            <p>Real Poise, Real Power, Real Perfomance.</p>
+            <a href="#" class="btn">book a test ride</a>
+        </div>
+    </div>
+
+    <section class="cars">
+        <div class="container">
+            <div class="column">
+                <div class="card">
+                    <img src="fc.webp" alt="">
+                    <h2>Quantum Velocitor</h2>
+                    <p>Introducing the Quantum Velocitor, the epitome of futuristic automotive design and cutting-edge technology. This sleek and sophisticated vehicle is engineered to push the boundaries of innovation, providing an unparalleled driving experience.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="fc1.jpg" alt="">
+                    <h2>Aether Apex</h2>
+                    <p>The Aether Apex showcases a bold and aerodynamic profile, featuring sleek lines and a low stance that enhance its visual appeal and performance. Its distinctive design elements, such as the geometric wheel arches and panoramic...</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="fc2.webp" alt="">
+                    <h2>Neutron Veloce</h2>
+                    <p>The Neutron Veloce represents the pinnacle of futuristic automotive engineering and design, seamlessly blending cutting-edge technology with timeless elegance. This hypercar is crafted for enthusiasts who crave an unparalleled...</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="copyright">
+                <img src="fclogo.svg" alt="Logo">
+                <span>&copy; 2024 Futuristic Cars</span>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script>
+        let heroBg = document.querySelector('.hero');
+
+        setInterval(() => {
+            heroBg.style.backgroundImage = "url(bg-light.jpg)"
+            
+            setTimeout(() => {
+                heroBg.style.backgroundImage = "url(bg.jpg)"
+            }, 1000);
+        }, 2200);
+    </script>
+</body>
+</html>
